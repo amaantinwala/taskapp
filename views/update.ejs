@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen p-10 bg-zinc-800 block">
+        <h1 class="text-center text-2xl text-slate-200 m-10">Update Tasks</h1>
+        <form action="/update" method="POST" class="flex flex-col">
+            <input type="text" name="title" class="w-full p-3 border-none text-slate-500 bg-slate-900 rounded-md mb-3 caret-emerald-400 focus:outline-emerald-400" value="<%=title1%>" readonly="true">
+            <textarea name="description" id="" cols="30" rows="10" class="w-full p-3 border-none text-slate-200 resize-none  bg-slate-900 rounded-md caret-emerald-400 focus:outline-emerald-400" placeholder="Description"><%= data %></textarea>
+            <input type="submit" class="bg-yellow-400 w-40 rounded-md p-3 mt-4 font-bold text-black-100" value="Update">
+        </form>
+    </div>
+</body>
+</html>
